@@ -178,7 +178,7 @@ public class DeptDAO {
 			String sql = "delete from dept_temp where deptNo=?";
 			pstmt = con.prepareStatement(sql);
 			pstmt.setInt(1, deptNo);
-			rs = pstmt.executeQuery(sql);
+			
 			
 			int result = pstmt.executeUpdate();
 			if (result>0) {
